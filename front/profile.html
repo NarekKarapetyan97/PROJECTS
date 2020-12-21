@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<html>
+  <header>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </header>
+<body>
+  <div class = "text-right" >
+    <button  id="logout" class="btn btn-danger"> Log Out</button>
+  </div>
+<h2>Profile</h2>
+<p>Profile Name is  <mark> <span id = "showname"></span> </mark> </p>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<form id = "postid">
+    <textarea class="form-control z-depth-1" name="message" id="textarea1" 
+    rows="20" 
+    cols="40" class="ui-autocomplete-input" 
+    autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"
+    placeholder="Write your post here"></textarea>
+    <br><br>
+    <input type="submit" class="btn btn-light" id="submit">
+    
+  </form>
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Post and Chat</title>
+  <script defer src="http://localhost:5001/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+   
+  
+    <div id="message-container" class="col-md-6 col-xl-4 px-0" >
+     <div id="feedback"></div>
+     
+    </div>
+  
+
+  <div id="wrapper">
+  <form id="send-container">
+    <input type="text" id="message-input" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; ">
+    <button type="submit" id="send-button" class="btn btn-secondary">Send</button>
+  </form>
+</div>
+  <script src="profile.js"></script>
+</body>
+</html>
